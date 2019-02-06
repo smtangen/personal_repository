@@ -1,0 +1,748 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="52.99998" y="0.0001487732" width="805" height="485.9998" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="77.99998" y="246.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\stangen\Desktop\dataset.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dataset.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Player" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Game_Num" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Pos" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="GS" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="FPTS" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Age" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Age_sq" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="PV_FPTS" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="PV_MP" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="AVG_MP_2" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Home/Away" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="PV_GS" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="AVG_FPTS" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Std_FPTS" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="PV_FPTS_2" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="PV_MP_2" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="AVG_FPTS_2" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Std_FPTS_2" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="AVG_MP" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="AVG_FPTS_3" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Std_FPTS_3" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="AVG_MP_3" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="POS_AVG_FPTS" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Opp_AVG_FPTS" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="Rest" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+                <Field name="After_Injury" size="254" source="File: C:\Users\stangen\Desktop\dataset.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="150" y="246.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Field_1" selected="True" type="Float" size="4" />
+                <SelectField field="Date" selected="True" type="Date" size="10" />
+                <SelectField field="Game_Num" selected="True" type="Int32" size="4" />
+                <SelectField field="GS" selected="True" type="Int32" size="4" />
+                <SelectField field="FPTS" selected="True" type="Float" size="4" />
+                <SelectField field="Age" selected="True" type="Float" size="4" />
+                <SelectField field="Age_sq" selected="True" type="Float" size="4" />
+                <SelectField field="PV_FPTS" selected="True" type="Float" size="4" />
+                <SelectField field="PV_MP" selected="True" type="Float" size="4" />
+                <SelectField field="AVG_MP_2" selected="True" type="Float" size="4" />
+                <SelectField field="Home/Away" selected="True" rename="Home" type="Int32" size="4" />
+                <SelectField field="PV_GS" selected="True" type="Float" size="4" />
+                <SelectField field="AVG_FPTS" selected="True" type="Float" size="4" />
+                <SelectField field="Std_FPTS" selected="True" type="Float" size="4" />
+                <SelectField field="PV_FPTS_2" selected="True" type="Float" size="4" />
+                <SelectField field="PV_MP_2" selected="True" type="Float" size="4" />
+                <SelectField field="AVG_FPTS_2" selected="True" type="Float" size="4" />
+                <SelectField field="Std_FPTS_2" selected="True" type="Float" size="4" />
+                <SelectField field="AVG_MP" selected="True" type="Float" size="4" />
+                <SelectField field="AVG_FPTS_3" selected="True" type="Float" size="4" />
+                <SelectField field="Std_FPTS_3" selected="True" type="Float" size="4" />
+                <SelectField field="AVG_MP_3" selected="True" type="Float" size="4" />
+                <SelectField field="POS_AVG_FPTS" selected="True" type="Float" size="4" />
+                <SelectField field="Opp_AVG_FPTS" selected="True" type="Float" size="4" />
+                <SelectField field="Rest" selected="True" type="Float" size="4" />
+                <SelectField field="After_Injury" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="Linear_Regression">
+            <Position x="498" y="77.99997" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Customize</Value>
+              <Value name="curTab">graphics</Value>
+              <Value name="standardize_pred">True</Value>
+              <Value name="internal_cv">True</Value>
+              <Value name="display_graphs">True</Value>
+              <Value name="set_seed_internal_cv">True</Value>
+              <Value name="set_seed_external_cv">True</Value>
+              <Value name="lambda_1se">True</Value>
+              <Value name="lambda_min">False</Value>
+              <Value name="Model Name">Linear_Regression</Value>
+              <Value name="Y Var">FPTS</Value>
+              <Value name="X Vars">Age,Age_sq,PV_FPTS,PV_MP,AVG_MP_2,Home/Away,PV_GS,AVG_FPTS,Std_FPTS,PV_FPTS_2,PV_MP_2,AVG_FPTS_2,Std_FPTS_2,AVG_MP,AVG_FPTS_3,Std_FPTS_3,AVG_MP_3,POS_AVG_FPTS,Opp_AVG_FPTS,Rest,After_Injury</Value>
+              <Value name="Omit Constant">False</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">False</Value>
+              <Value name="alpha">0.5</Value>
+              <Value name="nfolds">5</Value>
+              <Value name="lambda">lambda_1se</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="external_cv">True</Value>
+              <Value name="nfolds_external">4</Value>
+              <Value name="numberTrials">4</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Linear_Regression</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="Linear_Regression">
+            <Position x="486" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Customize</Value>
+              <Value name="curTab">advanced</Value>
+              <Value name="standardize_pred">True</Value>
+              <Value name="internal_cv">True</Value>
+              <Value name="display_graphs">True</Value>
+              <Value name="set_seed_internal_cv">True</Value>
+              <Value name="set_seed_external_cv">True</Value>
+              <Value name="lambda_1se">False</Value>
+              <Value name="lambda_min">True</Value>
+              <Value name="Model Name">Lasso_Regression</Value>
+              <Value name="Y Var">FPTS</Value>
+              <Value name="X Vars">Age,Age_sq,PV_FPTS,PV_MP,AVG_MP_2,Home/Away,PV_GS,AVG_FPTS,Std_FPTS,PV_FPTS_2,PV_MP_2,AVG_FPTS_2,Std_FPTS_2,AVG_MP,AVG_FPTS_3,Std_FPTS_3,AVG_MP_3,POS_AVG_FPTS,Opp_AVG_FPTS,Rest,After_Injury</Value>
+              <Value name="Omit Constant">False</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">True</Value>
+              <Value name="alpha">1</Value>
+              <Value name="nfolds">4</Value>
+              <Value name="lambda">lambda_min</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="external_cv">True</Value>
+              <Value name="nfolds_external">4</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Lasso_Regression</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="Linear_Regression">
+            <Position x="486" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Customize</Value>
+              <Value name="curTab">advanced</Value>
+              <Value name="standardize_pred">True</Value>
+              <Value name="internal_cv">True</Value>
+              <Value name="display_graphs">True</Value>
+              <Value name="set_seed_internal_cv">True</Value>
+              <Value name="set_seed_external_cv">True</Value>
+              <Value name="lambda_1se">False</Value>
+              <Value name="lambda_min">True</Value>
+              <Value name="Model Name">Ridge_Regression</Value>
+              <Value name="Y Var">FPTS</Value>
+              <Value name="X Vars">Age,Age_sq,PV_FPTS,PV_MP,AVG_MP_2,Home/Away,PV_GS,AVG_FPTS,Std_FPTS,PV_FPTS_2,PV_MP_2,AVG_FPTS_2,Std_FPTS_2,AVG_MP,AVG_FPTS_3,Std_FPTS_3,AVG_MP_3,POS_AVG_FPTS,Opp_AVG_FPTS,Rest,After_Injury</Value>
+              <Value name="Omit Constant">False</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">True</Value>
+              <Value name="alpha">0</Value>
+              <Value name="nfolds">4</Value>
+              <Value name="lambda">lambda_min</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="external_cv">True</Value>
+              <Value name="nfolds_external">4</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Ridge_Regression</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="642" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\stangen\AppData\Local\Temp\Engine_16228_05e3c975e91a432ca3fec3899fa412e5_\Engine_13824_170e761522284444988b0d4a73b0c140_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="666" y="346" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\stangen\AppData\Local\Temp\Engine_16228_05e3c975e91a432ca3fec3899fa412e5_\Engine_13824_5caaefcfbc034539a49249112cda772c_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="79.00009" y="44.00015" width="348" height="22.00002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Linear Regression (Linear, Lasso (L1), Ridge (L2))</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings>
+            <Position x="306" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="estimation pct">80</Value>
+              <Value name="validation pct">20</Value>
+              <Value name="rand seed">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings>
+            <Position x="306" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="estimation pct">80</Value>
+              <Value name="validation pct">20</Value>
+              <Value name="rand seed">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings>
+            <Position x="305.9999" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="estimation pct">80</Value>
+              <Value name="validation pct">20</Value>
+              <Value name="rand seed">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings>
+            <Position x="642" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Predicted</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" source="R-DATA:" type="Double" />
+                <Field name="Player" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Date" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Game_Num" source="R-DATA:" type="Int32" />
+                <Field name="Pos" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="GS" source="R-DATA:" type="Int32" />
+                <Field name="FPTS" source="R-DATA:" type="Double" />
+                <Field name="Age" source="R-DATA:" type="Double" />
+                <Field name="Age_sq" source="R-DATA:" type="Double" />
+                <Field name="PV_FPTS" source="R-DATA:" type="Double" />
+                <Field name="PV_MP" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP_2" source="R-DATA:" type="Double" />
+                <Field name="Home" source="R-DATA:" type="Int32" />
+                <Field name="PV_GS" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS" source="R-DATA:" type="Double" />
+                <Field name="PV_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="PV_MP_2" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS_3" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS_3" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP_3" source="R-DATA:" type="Double" />
+                <Field name="POS_AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Opp_AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Rest" source="R-DATA:" type="Double" />
+                <Field name="After_Injury" source="R-DATA:" type="Int32" />
+                <Field name="Predicted" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="774" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\stangen\AppData\Local\Temp\Engine_16228_05e3c975e91a432ca3fec3899fa412e5_\Engine_13824_dd0279d4a9e34ca8b4201568c44597f9_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="690" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\stangen\AppData\Local\Temp\Engine_16228_05e3c975e91a432ca3fec3899fa412e5_\Engine_13824_d6312159dbd6445dad845397c59393de_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings>
+            <Position x="642" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Predicted</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" source="R-DATA:" type="Double" />
+                <Field name="Player" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Date" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Game_Num" source="R-DATA:" type="Int32" />
+                <Field name="Pos" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="GS" source="R-DATA:" type="Int32" />
+                <Field name="FPTS" source="R-DATA:" type="Double" />
+                <Field name="Age" source="R-DATA:" type="Double" />
+                <Field name="Age_sq" source="R-DATA:" type="Double" />
+                <Field name="PV_FPTS" source="R-DATA:" type="Double" />
+                <Field name="PV_MP" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP_2" source="R-DATA:" type="Double" />
+                <Field name="Home" source="R-DATA:" type="Int32" />
+                <Field name="PV_GS" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS" source="R-DATA:" type="Double" />
+                <Field name="PV_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="PV_MP_2" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS_3" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS_3" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP_3" source="R-DATA:" type="Double" />
+                <Field name="POS_AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Opp_AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Rest" source="R-DATA:" type="Double" />
+                <Field name="After_Injury" source="R-DATA:" type="Int32" />
+                <Field name="Score" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="774" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\stangen\AppData\Local\Temp\Engine_16228_05e3c975e91a432ca3fec3899fa412e5_\Engine_13824_46c157edf95742d0802294bcb7688de8_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings>
+            <Position x="642" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Predicted</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" source="R-DATA:" type="Double" />
+                <Field name="Player" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Date" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Game_Num" source="R-DATA:" type="Int32" />
+                <Field name="Pos" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="GS" source="R-DATA:" type="Int32" />
+                <Field name="FPTS" source="R-DATA:" type="Double" />
+                <Field name="Age" source="R-DATA:" type="Double" />
+                <Field name="Age_sq" source="R-DATA:" type="Double" />
+                <Field name="PV_FPTS" source="R-DATA:" type="Double" />
+                <Field name="PV_MP" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP_2" source="R-DATA:" type="Double" />
+                <Field name="Home" source="R-DATA:" type="Int32" />
+                <Field name="PV_GS" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS" source="R-DATA:" type="Double" />
+                <Field name="PV_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="PV_MP_2" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS_2" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP" source="R-DATA:" type="Double" />
+                <Field name="AVG_FPTS_3" source="R-DATA:" type="Double" />
+                <Field name="Std_FPTS_3" source="R-DATA:" type="Double" />
+                <Field name="AVG_MP_3" source="R-DATA:" type="Double" />
+                <Field name="POS_AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Opp_AVG_FPTS" source="R-DATA:" type="Double" />
+                <Field name="Rest" source="R-DATA:" type="Double" />
+                <Field name="After_Injury" source="R-DATA:" type="Int32" />
+                <Field name="Score" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="774" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\stangen\AppData\Local\Temp\Engine_16228_05e3c975e91a432ca3fec3899fa412e5_\Engine_13824_601354acd5994a838c43a925c7f4a49f_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="38" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Validation" />
+      <Destination ToolID="38" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Reports" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Reports" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="43" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Validation" />
+      <Destination ToolID="43" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Reports" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="45" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Validation" />
+      <Destination ToolID="45" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Estimation" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Estimation" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Estimation" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FBBall</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
