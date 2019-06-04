@@ -1,0 +1,28 @@
+---
+title: "FF"
+author: "Shawn Tangen"
+date: "June 4, 2019"
+output: html_document
+---
+
+```{r}
+#devtools::install_github(repo = "FantasyFootballAnalytics/ffanalytics", build_vignettes = TRUE)
+library(ffanalytics)
+
+install.packages(c("tidyverse","rvest","httr","readxl","janitor","glue","Hmisc"), 
+                 dependencies=TRUE, repos=c("http://rstudio.org/_packages", 
+                                            "http://cran.rstudio.com"))
+```
+
+```{r}
+my_scrape <- scrape_data(src = c("CBS", "ESPN", "Yahoo"), 
+                         pos = c("QB", "RB", "WR", "TE", "DST"),
+                         season = 2018, week = 0)
+```
+
+```{r}
+my_projections <- projections_table(my_scrape)
+
+rlang::last_error()
+```
+
